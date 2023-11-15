@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 const Toolbar = ({ filters, selected, onSelectFilter }) => {
+  const uniquefilters = Array.from(new Set(filters));
 
   return (
     <div className="toolbar">
-      {filters.map((item) => (
+      {uniquefilters.map((item) => (
         <button
           onClick={onSelectFilter}
           key={item}

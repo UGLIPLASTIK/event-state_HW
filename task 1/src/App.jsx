@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
 import ProjectList from './components/ProjectList';
+import Portfolio from './components/portfolio';
 
 const projects = [{
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
@@ -57,7 +58,7 @@ const projects = [{
 
 function App() {
   return (
-    <ProjectList projects={projects} />
+    <Portfolio projects={projects} />
   )
 }
 
