@@ -1,10 +1,30 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .active {
-  background-color: aqua;
+  background-color: #525252;
+  color: white;
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+.toolbar {
+  margin-bottom: 15px;
+  padding-left: 7px;
+}
+
+img {
+  padding: 7px;
 }

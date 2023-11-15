@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import './App.css'
-import ProjectList from './components/ProjectList';
 import Portfolio from './components/portfolio';
 
 const projects = [{

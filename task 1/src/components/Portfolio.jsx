@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import ProjectList from './ProjectList';
 import Toolbar from './Toolbar';
@@ -20,14 +21,12 @@ const Portfolio = ({ projects }) => {
     if (select === 'All') {
       setFilter(projects);
     } else {
-      // setFilter(projects);
-
-      setFilter(filters.filter(project => project === select));
+      setFilter(projects.filter(project => project.category === select));
     }
 
     setSelected(select);
 }
-  // console.log(filtredProjects)
+
   return(
     <div>
       <Toolbar filters={filters}
