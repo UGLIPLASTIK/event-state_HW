@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  place-items: normal !important;
+}
+
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5380F7;
+  min-width: 260px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn .material-icons {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+.dropdown {
+  box-sizing: border-box;
+  padding: 0 15px;
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.dropdown li {
+  list-style-type: none;
+  padding: 15px;
+  border-bottom: 1px solid #0000001a;
+}
+
+.dropdown li:last-child {
+  border-bottom: 0;
+}
+
+.dropdown li.active {
+  color: #5380F7;
+}
+
+@keyframes ripple {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}

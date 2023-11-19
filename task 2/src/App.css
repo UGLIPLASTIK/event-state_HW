@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+body {
+  place-items: normal;
+}
+
 .material-icons {
   position: absolute;
   font-size: 30px;
